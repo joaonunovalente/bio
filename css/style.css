@@ -48,3 +48,11 @@
     color: #333; /* Slightly lighter on hover */
 }
 
+.container-footer {
+    text-align: center;
+    color: white;
+}
+.container-footer a{
+    color: white;
+    text-decoration: none
+}
