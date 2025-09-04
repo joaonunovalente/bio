@@ -17,11 +17,15 @@
 }
 
 .main-container {
-    margin: 0 auto;
-    max-width: 600px;
+    margin: 20px auto;
+    max-width: 700px;
 }
 
 .profile-image {
     border-radius: 50%;
     max-width: 30%;
+}
+
+.main-article {
+    padding: 3rem;
 }
