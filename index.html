@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bio | João Nuno Valente</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.amber.min.css">
     <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -28,9 +28,69 @@
 <canvas id="c"></canvas>
 
 <!-- Your content -->
-<div class="content">
-    <p>Hello, world!</p>
-    <button>Button</button>
+<div class="content main-container">
+    <article>
+        <h1>Profile</h1>
+
+        <p>Hello, world!</p>
+        <br>
+        <hr>
+        <h1>Buttons</h1>
+        <div class="grid">
+            <button>Button</button>
+        </div>
+        <br>
+        <div class="grid">
+            <button>Button</button>
+        </div>
+        <hr>
+        <h1>Dropdowns</h1>
+        <!-- Secondary -->
+        <details>
+            <summary role="button" class="primary">Primary</summary>
+            <div class="grid">
+                <button>Button</button>
+            </div>
+            <br>
+            <div class="grid">
+                <button>Button</button>
+            </div>
+            <br>
+            <div class="grid">
+                <button>Button</button>
+
+            </div>
+
+        </details>
+
+        <!-- Contrast -->
+        <details>
+            <summary role="button" class="contrast">Contrast</summary>
+            <p>...</p>
+        </details>
+
+        <!-- Primary outline -->
+        <details>
+            <summary role="button" class="outline">Primary outline</summary>
+            <p>...</p>
+        </details>
+
+        <!-- Secondary outline -->
+        <details>
+            <summary role="button" class="outline secondary">Secondary outline</summary>
+            <p>...</p>
+        </details>
+
+        <!-- Contrast outline -->
+        <details>
+            <summary role="button" class="outline contrast">Contrast outline</summary>
+            <p>...</p>
+        </details>
+
+    </article>
+
+
+
 </div>
 
 
