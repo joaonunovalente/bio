@@ -1,6 +1,6 @@
 # bio
 
-This repository contains the source code for **[https://bio.joaonunovalente.com/](Bio.JoaoNunoValente.com)**, a minimalist personal bio page built with **Pico CSS** and a lightweight animated background.  
+This repository contains the source code for **[Bio.JoaoNunoValente.com](https://bio.joaonunovalente.com/)**, a minimalist personal bio page built with **Pico CSS** and a lightweight animated background.  
 The site links to my social profiles, CV, PhD website, and personal projects.
 
 
