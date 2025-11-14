@@ -1,4 +1,4 @@
-# João Nuno Valente – Bio Website
+# bio
 
 This repository contains the source code for **bio.JoaoNunoValente.com**, a minimalist personal bio page built with **Pico CSS** and a lightweight animated background.  
 The site links to my social profiles, CV, PhD website, and personal projects.
