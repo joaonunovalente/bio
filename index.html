@@ -8,10 +8,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="João Nuno Valente">
-    <meta name="description" content="João Nuno Valente's digital hub. Connect with me on social media, explore my projects, and access my CV, and Ph.D. website.">
+    <meta name="description"
+        content="João Nuno Valente's digital hub. Connect with me on social media, explore my projects, and access my CV, and Ph.D. website.">
 
     <meta property="og:title" content="Bio | João Nuno Valente">
-    <meta property="og:description" content="João Nuno Valente's digital hub. Connect with me on social media, explore my projects, and access my CV, and Ph.D. website.">
+    <meta property="og:description"
+        content="João Nuno Valente's digital hub. Connect with me on social media, explore my projects, and access my CV, and Ph.D. website.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bio.joaonunovalente.com">
     <meta property="og:image" content="https://bio.joaonunovalente.com/img/profile-picture.jpg">
@@ -78,8 +80,15 @@
                 </div>
                 <br>
                 <div class="grid">
-                    <a href="https://robot-game.joaonunovalente.com/" target="_blank" role="button" class="secondary"
-                        rel="noopener noreferrer"><b>Robot Game</b></a>
+                    <a href="https://robot-game.joaonunovalente.com/" target="_blank" role="button"
+                        class="secondary rg-project" rel="noopener noreferrer">
+                        <b>Robot Game</b>
+                        <em data-tooltip="Container may take a moment to initialize." data-placement="top"
+                            class="rg-icon">
+                            <img src="information-mark.png"
+                                style="block-size: 25px; filter: invert(1) brightness(200%);" alt="Info">
+                        </em>
+                    </a>
                 </div>
             </details>
         </article>
@@ -96,6 +105,21 @@
     <!-- Background -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js'></script>
     <script src="js/script.js"></script>
+    <script>
+        document.querySelectorAll('.rg-icon').forEach(el => {
+            el.addEventListener('click', e => {
+            e.preventDefault();
+            e.stopPropagation();
+            el.classList.toggle('tooltip-visible');
+            });
+        });
+        // Close tooltip when clicking outside
+        document.addEventListener('click', () => {
+            document.querySelectorAll('.tooltip-visible').forEach(el => el.classList.remove('tooltip-visible'));
+        });
+    </script>
+
+
 </body>
 
 </html>
