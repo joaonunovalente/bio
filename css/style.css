@@ -34,18 +34,38 @@
 
 .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 4px;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
 }
 
+/* Each link is a fixed square box so every glyph is centred in the same space.
+   Font Awesome webfont glyphs are all 1em tall, but their widths differ
+   (448 vs 512 units), which is what made the row look uneven. */
 .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: 40px;
+    block-size: 40px;
     color: #000;
     /* Black color */
-    font-size: 30px;
+    font-size: 28px;
     text-decoration: none;
     transition: transform 0.2s;
+}
+
+/* Remove the inline baseline box that nudged icons off the row's centre line. */
+.social-icons i {
+    display: block;
+    line-height: 1;
+}
+
+/* Optical balance: the wide glyphs read heavier than the narrow ones. */
+.social-icons .fa-newspaper,
+.social-icons .fa-github {
+    font-size: 0.94em;
 }
 
 .social-icons a:hover {
